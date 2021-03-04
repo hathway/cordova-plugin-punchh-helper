@@ -1,6 +1,6 @@
 
 import Foundation
-class CordovaPluginPunchhHelper : CDVPlugin {
+class PunchhHelper : CDVPlugin {
     @objc(getDeviceId:)
     func getDeviceId(command : CDVInvokedUrlCommand) {
         let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: Bundle.main.identifier)

@@ -1,9 +1,9 @@
 {
-  "name": "com.wearehathway.cordova.punchh",
+  "name": "cordovapunchh",
   "version": "1.0.0",
   "description": "Native helper to make interacting with the Punchh API easier for Cordova applications",
   "cordova": {
-    "id": "com.wearehathway.cordova.punchh",
+    "id": "com.wearehathway.cordova.plugins.punchh",
     "platforms": [
       "android",
       "ios"

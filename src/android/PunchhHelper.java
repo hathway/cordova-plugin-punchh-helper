@@ -24,7 +24,7 @@ import java.util.*;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class CordovaPluginPunchhHelper extends CordovaPlugin {
+public class PunchhHelper extends CordovaPlugin {
 
   private PunchhDeviceIdHelper deviceIdHelper;
   private Activity cordovaActivity;

@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.wearehathway.cordova.punchh" version="1.0.0"
+<plugin id="cordova-plugin-punchh-helper" version="1.0.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>CordovaPluginPunchhHelper</name>
-    <js-module name="CordovaPluginPunchhHelper" src="www/CordovaPluginPunchhHelper.js">
-        <clobbers target="cordova.plugins.CordovaPluginPunchhHelper" />
+    <name>PunchhHelper</name>
+    <js-module name="PunchhHelper" src="www/punchh-helper.js">
+        <clobbers target="cordova.plugins.punchh-helper" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="CordovaPluginPunchhHelper">
-                <param name="android-package" value="com.wearehathway.cordova.punchh.CordovaPluginPunchhHelper" />
+            <feature name="PunchhHelper">
+                <param name="android-package" value="com.wearehathway.cordova.punchh.PunchhHelper" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
-        <source-file src="src/android/CordovaPluginPunchhHelper.java" target-dir="src/com/wearehathway/cordova/punchh/CordovaPluginPunchhHelper" />
+        <source-file src="src/android/PunchhHelper.java" target-dir="src/com/wearehathway/cordova/punchh" />
     </platform>
     <platform name="ios">
         <dependency id="cordova-plugin-add-swift-support" />
         <config-file parent="/*" target="config.xml">
-            <feature name="CordovaPluginPunchhHelper">
-                <param name="ios-package" value="CordovaPluginPunchhHelper" />
+            <feature name="PunchhHelper">
+                <param name="ios-package" value="PunchhHelper" />
             </feature>
         </config-file>
-        <source-file src="src/ios/CordovaPluginPunchhHelper.swift" />
+        <source-file src="src/ios/PunchhHelper.swift" />
     </platform>
 </plugin>
