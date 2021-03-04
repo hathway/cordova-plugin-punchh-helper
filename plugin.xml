@@ -16,11 +16,12 @@
         <source-file src="src/android/CordovaPluginPunchhHelper.java" target-dir="src/com/wearehathway/cordova/punchh/CordovaPluginPunchhHelper" />
     </platform>
     <platform name="ios">
+        <dependency id="cordova-plugin-add-swift-support" />
         <config-file parent="/*" target="config.xml">
             <feature name="CordovaPluginPunchhHelper">
                 <param name="ios-package" value="CordovaPluginPunchhHelper" />
             </feature>
         </config-file>
-        <source-file src="src/ios/CordovaPluginPunchhHelper.m" />
+        <source-file src="src/ios/CordovaPluginPunchhHelper.swift" />
     </platform>
 </plugin>

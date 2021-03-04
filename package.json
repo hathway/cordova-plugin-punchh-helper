@@ -1,0 +1,27 @@
+{
+  "name": "com.wearehathway.cordova.punchh",
+  "version": "1.0.0",
+  "description": "Native helper to make interacting with the Punchh API easier for Cordova applications",
+  "cordova": {
+    "id": "com.wearehathway.cordova.punchh",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hathway/cordova-plugin-punchh-helper.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Hathway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hathway/cordova-plugin-punchh-helper/issues"
+  },
+  "homepage": "https://github.com/hathway/cordova-plugin-punchh-helper#readme"
+}
