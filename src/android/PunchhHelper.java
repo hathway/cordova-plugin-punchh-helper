@@ -41,7 +41,6 @@ public class PunchhHelper extends CordovaPlugin {
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     if (action.equals("getUserAgent")) {
-      String message = args.getString(0);
       String userAgentValue = this.getUserAgent();
       PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, userAgentValue);
       callbackContext.sendPluginResult(pluginResult);
