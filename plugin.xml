@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-punchh-helper" version="1.0.0"
+<plugin id="cordova-plugin-punchh" version="1.0.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>PunchhHelper</name>
-    <js-module name="PunchhHelper" src="www/punchh-helper.js">
-        <clobbers target="cordova.plugins.punchh-helper" />
+    <js-module name="punchhHelper" src="www/punchh-helper.js">
+        <clobbers target="cordova.plugins.punchhHelper" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
