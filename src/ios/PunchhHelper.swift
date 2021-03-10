@@ -1,5 +1,7 @@
 
 import Foundation
+
+@objc(PunchhHelper)
 class PunchhHelper : CDVPlugin {
     @objc(getDeviceId:)
     func getDeviceId(command : CDVInvokedUrlCommand) {
