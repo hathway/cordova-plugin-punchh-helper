@@ -5,7 +5,7 @@ import Foundation
 class PunchhHelper : CDVPlugin {
     @objc(getDeviceId:)
     func getDeviceId(command : CDVInvokedUrlCommand) {
-        let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: Bundle.main.identifier)
+        let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: Bundle.main.punchhDeviceId)
         self.commandDelegate.send(result, callbackId: command.callbackId)
     }
 
@@ -28,14 +28,8 @@ class PunchhHelper : CDVPlugin {
 }
 
 extension Bundle {
-    var identifier: String {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        return machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else { return identifier }
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
+    var punchhDeviceId: String {
+        return UIDevice.current.identifierForVendor?.uuidString ?? "[unknown]"
     }
 
     /// Return the short bundle version string (usually application version)
